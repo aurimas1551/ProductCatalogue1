@@ -81,6 +81,7 @@ namespace ProductCatalogue.Controllers
             return NoContent();
         }
 
+        //---Edit single Product by ID
         [HttpPut("{id:int}", Name = "UpdateProduct")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
