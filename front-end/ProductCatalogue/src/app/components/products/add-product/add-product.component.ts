@@ -42,20 +42,20 @@ export class AddProductComponent implements OnInit {
 
   addProduct() {
     if (this.addProductRequest.type.length == 0) {
-      console.log("You must select a type");
+      alert("You must select a type");
     } else if (this.addProductRequest.description.trim().length == 0) {
-      console.log("You must add description to your product");
+      alert("You must add description to your product");
     } else {
       this.productService.addProduct(this.addProductRequest)
         .subscribe({
           next: (product) => {
-            console.log("Successfully added product");
+            alert("Successfully added product");
             this.addProductRequest.id = 0;
             this.addProductRequest.type = '';
             this.addProductRequest.description = '';
           },
           error: (response) => {
-            console.log(response);
+            alert(JSON.stringify(response.error.errors));
           }
         });
     }

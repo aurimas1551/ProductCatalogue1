@@ -1,6 +1,9 @@
+<div class="container my-5">
+    <h2>Products</h2>
 <div class="row">
     <div class="col-4">
-        <select class="form-select form-select-sm " aria-label=".form-select-sm example" (change)="updateTypeSelector($event)">
+        <select class="form-select form-select-sm " aria-label=".form-select-sm example"
+            (change)="updateTypeSelector($event)">
             <option value="default">All</option>
             <option *ngFor="let productType of productTypes" [value]="productType.name">
                 {{productType.name}}
@@ -8,18 +11,23 @@
         </select>
     </div>
 </div>
-<table>
+<table class="table">
     <thead>
-        <th>Id</th>
-        <th>Type</th>
-        <th>Description</th>
+        <tr>
+            <th>Id</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Delete</th>
+        </tr>
     </thead>
     <tbody>
         <tr *ngFor="let product of displayedProducts">
             <td>{{product.id}}</td>
             <td>{{product.type}}</td>
             <td>{{product.description}}</td>
-            <td><button type="button" (click)="deleteProduct(product.id)" class="btn-close" aria-label="Close"></button></td>
+            <td><button type="button" (click)="confirmation(product.id)" class="btn-close" aria-label="Close"></button>
+            </td>
         </tr>
     </tbody>
 </table>
+</div>

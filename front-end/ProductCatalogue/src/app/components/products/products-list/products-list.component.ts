@@ -70,4 +70,10 @@ export class ProductsListComponent implements OnInit {
       });
   }
 
+  confirmation(id: number) {
+    if(confirm("Are you sure to delete ID: " + id + " product?")) {
+      this.deleteProduct(id);
+    }
+  }
+
 }
