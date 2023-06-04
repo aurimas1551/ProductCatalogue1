@@ -1,0 +1,53 @@
+.product-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.product {
+    width: 250px; 
+    height: 300px;
+    display: flex;
+    margin: 0;
+    padding: 5px;
+    position: relative;
+}
+
+.product:hover {
+    box-shadow: 0 0 0 2px #d0d0d0;
+}
+
+.product-img {
+    max-height:100%; 
+    max-width:50%; 
+    align-self: center;
+}
+
+.product-desc {
+    cursor: default;
+}
+
+.product-desc > h6 {
+    height: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+.product-desc > div {
+    height: 245px;
+    width: 125px;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-delete {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    cursor: pointer;
+}

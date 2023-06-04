@@ -99,6 +99,7 @@ namespace ProductCatalogue.Controllers
             var productFromList = ProductStore.productList.FirstOrDefault(u => u.Id == id);
             productFromList.Type = product.Type;
             productFromList.Description = product.Description;
+            productFromList.Name = product.Name;
 
             return NoContent();
         }

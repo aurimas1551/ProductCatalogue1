@@ -17,6 +17,7 @@ export class AddProductComponent implements OnInit {
   addProductRequest: Product = {
     id: 0,
     type: '',
+    name: '',
     description: ''
   }
   constructor(private productService: ProductsService, private prodcutTypeService: ProductTypesService) {
@@ -43,6 +44,8 @@ export class AddProductComponent implements OnInit {
   addProduct() {
     if (this.addProductRequest.type.length == 0) {
       alert("You must select a type");
+    } else if (this.addProductRequest.name.trim().length == 0) {
+      alert("You must add name to your product");
     } else if (this.addProductRequest.description.trim().length == 0) {
       alert("You must add description to your product");
     } else {
@@ -52,6 +55,7 @@ export class AddProductComponent implements OnInit {
             alert("Successfully added product");
             this.addProductRequest.id = 0;
             this.addProductRequest.type = '';
+            this.addProductRequest.name = '';
             this.addProductRequest.description = '';
           },
           error: (response) => {

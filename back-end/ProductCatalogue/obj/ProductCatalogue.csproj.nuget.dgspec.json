@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aurim\\Projects\\ProductCatalogue\\back-end\\ProductCatalogue\\ProductCatalogue.csproj": {}
+    "C:\\Users\\Aurimas\\Projektai\\ProductCatalogue1\\back-end\\ProductCatalogue\\ProductCatalogue.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aurim\\Projects\\ProductCatalogue\\back-end\\ProductCatalogue\\ProductCatalogue.csproj": {
+    "C:\\Users\\Aurimas\\Projektai\\ProductCatalogue1\\back-end\\ProductCatalogue\\ProductCatalogue.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aurim\\Projects\\ProductCatalogue\\back-end\\ProductCatalogue\\ProductCatalogue.csproj",
+        "projectUniqueName": "C:\\Users\\Aurimas\\Projektai\\ProductCatalogue1\\back-end\\ProductCatalogue\\ProductCatalogue.csproj",
         "projectName": "ProductCatalogue",
-        "projectPath": "C:\\Users\\aurim\\Projects\\ProductCatalogue\\back-end\\ProductCatalogue\\ProductCatalogue.csproj",
-        "packagesPath": "C:\\Users\\aurim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aurim\\Projects\\ProductCatalogue\\back-end\\ProductCatalogue\\obj\\",
+        "projectPath": "C:\\Users\\Aurimas\\Projektai\\ProductCatalogue1\\back-end\\ProductCatalogue\\ProductCatalogue.csproj",
+        "packagesPath": "C:\\Users\\Aurimas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aurimas\\Projektai\\ProductCatalogue1\\back-end\\ProductCatalogue\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\aurim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aurimas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

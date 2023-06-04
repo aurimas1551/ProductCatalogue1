@@ -11,23 +11,14 @@
         </select>
     </div>
 </div>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Type</th>
-            <th>Description</th>
-            <th>Delete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let product of displayedProducts">
-            <td>{{product.id}}</td>
-            <td>{{product.type}}</td>
-            <td>{{product.description}}</td>
-            <td><button type="button" (click)="confirmation(product.id)" class="btn-close" aria-label="Close"></button>
-            </td>
-        </tr>
-    </tbody>
-</table>
+</div>
+<div class="container product-container">
+    <div class="product" *ngFor="let product of displayedProducts">
+        <div class="product-desc">
+            <h6>{{product.name}}</h6>
+            <div>{{product.description}}</div>
+        </div>
+        <img class="product-img" src="../../../../assets/{{product.type}}.jpg">
+        <div class="product-delete" (click)="confirmation(product.name, product.id)">&#10006;</div>
+    </div>
 </div>

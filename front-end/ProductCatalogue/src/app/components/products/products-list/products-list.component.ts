@@ -70,8 +70,8 @@ export class ProductsListComponent implements OnInit {
       });
   }
 
-  confirmation(id: number) {
-    if(confirm("Are you sure to delete ID: " + id + " product?")) {
+  confirmation(name: string,id: number) {
+    if(confirm("Are you sure to delete product named: " + name)) {
       this.deleteProduct(id);
     }
   }
